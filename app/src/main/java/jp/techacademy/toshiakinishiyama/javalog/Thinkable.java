@@ -5,5 +5,5 @@ package jp.techacademy.toshiakinishiyama.javalog;
  */
 interface Thinkable
 {
-    public void think(String hobby);
+    public void think();
 }

@@ -13,18 +13,18 @@ public class MainActivity extends AppCompatActivity
         setContentView(R.layout.activity_main);
 
         // 自分
-        Human human = new Human("西山", 34);
+        Human human = new Human("西山", 34, "野球");
         human.say();
-        human.think("野球");
+        human.think();
 
         // 長男
-        Human human2 = new Human("リョウ", 5);
+        Human human2 = new Human("リョウ", 5, "カブトムシ");
         human2.say();
-        human2.think("カブトムシ");
+        human2.think();
 
         // 次男
-        Human human3 = new Human("サトシ", 2);
+        Human human3 = new Human("サトシ", 2, "ジュウオウジャー");
         human3.say();
-        human3.think("ジュウオウジャー");
+        human3.think();
     }
 }

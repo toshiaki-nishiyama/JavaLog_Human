@@ -7,15 +7,16 @@ import android.util.Log;
  */
 class Human extends Animal implements Thinkable
 {
-    // 変数
-    String name;        // 名前
-    int age;            // 年齢
+    // メンバ変数
+    String hobby;       // 趣味
 
     // 引数付きコンストラクタ
-    public Human(String name, int age)
+    public Human(String name, int age, String hobby)
     {
-        this.name = name;
-        this.age = age;
+        // メンバ変数の初期化
+        this.name = name;       // 名前（継承元で宣言）
+        this.age = age;         // 年齢（継承元で宣言）
+        this.hobby = hobby;
     }
 
     // メソッド
@@ -25,8 +26,8 @@ class Human extends Animal implements Thinkable
     }
 
     @Override
-    public void think(String hobby)
+    public void think()
     {
-        Log.d("javatest", "「私は " + hobby + " について考える。」");
+        Log.d("javatest", "「私は " + this.hobby + " について考える。」");
     }
 }
